@@ -68,7 +68,7 @@ export default function Home({ aboutMe, projects }) {
     )
 }
 
-export const getStaticProps = async () => {
+export async function getServerSideProps() {
     const aboutMeRes = await fetch(`${server}/api/aboutMe`)
     const aboutMe = await aboutMeRes.json()
 

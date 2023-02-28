@@ -27,7 +27,7 @@ const aboutMe = ({ aboutMe }) => {
     )
 }
 
-export const getStaticProps = async () => {
+export async function getServerSideProps() {
     const res = await fetch(`${server}/api/aboutMe`)
     const aboutMe = await res.json()
 

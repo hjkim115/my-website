@@ -31,11 +31,11 @@ const project = ({ project }) => {
 
                     <h3>Technologies used</h3>
                     <div>
-                        {project.technologiesUsed.map((technology) => (
-                            <>
+                        {project.technologiesUsed.map((technology, technologyIndex) => (
+                            <div key={technologyIndex}>
                                 <h4>{technology.heading}</h4>
                                 <p>{technology.text}</p>
-                            </>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -48,29 +48,14 @@ const project = ({ project }) => {
     )
 }
 
-export const getStaticProps = async (context) => {
+export async function getServerSideProps(context) {
     const res = await fetch(`${server}/api/projects/${context.params.id}`)
-
     const project = await res.json()
 
     return {
         props: {
             project,
         },
-    }
-}
-
-export const getStaticPaths = async () => {
-    const res = await fetch(`${server}/api/projects`)
-
-    const projects = await res.json()
-
-    const ids = projects.map((project) => project._id)
-    const paths = ids.map((id) => ({ params: { id: id.toString() } }))
-
-    return {
-        paths,
-        fallback: false,
     }
 }
 

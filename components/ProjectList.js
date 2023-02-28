@@ -4,8 +4,8 @@ import projectListStyles from "../styles/ProjectList.module.css"
 const ProjectList = ({ projects }) => {
     return (
         <div className={projectListStyles.container}>
-            {projects.map((project) => (
-                <div className={projectListStyles.card}>
+            {projects.map((project, projectIndex) => (
+                <div className={projectListStyles.card} key={projectIndex}>
                     <div style={{
                          backgroundImage: `url(../images/${project.images[0]})`, 
                          backgroundPosition: "center",                      
