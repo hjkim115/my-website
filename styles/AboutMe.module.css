@@ -1,0 +1,36 @@
+.container{
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.personal_info_card{
+    background: white;
+    display: flex;
+    width: 900px;
+    height: 350px;
+    margin: 150px;
+    border-radius: 15px;
+}
+
+.personal_info_card div h2{
+    padding: 10px;
+}
+
+.personal_info_card div p{
+    padding: 10px;
+
+    
+}
+
+.image{
+    width: 50%;
+    height: 100%;
+    background-image: url("../public/images/me.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}

@@ -1,0 +1,29 @@
+.container{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.card{
+    background: white;
+    width: 400px;
+    margin: 100px;
+    border-radius: 15px;
+}
+
+.card_image{
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.card h2{
+    padding: 10px
+}
+
+.card p{
+    padding: 10px;
+}

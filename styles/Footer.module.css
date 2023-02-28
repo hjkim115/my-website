@@ -1,0 +1,54 @@
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer_content p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.pages{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.pages li{
+    margin: 0 10px;
+}
+
+.pages a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.pages a:hover i{
+    color:  aqua;
+}
+
+.footer_bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer_bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

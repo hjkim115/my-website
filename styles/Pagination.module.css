@@ -1,0 +1,20 @@
+.page{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.page li{
+    margin: 0 10px;
+}
+
+.page a{
+    text-decoration: none;
+    color: #333;
+}
+
+.page a:hover{
+    color: white;
+}
